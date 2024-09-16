@@ -1,0 +1,32 @@
+
+Documentación del Sistema de Reservas de Cines
+
+En este archivo, he desarrollado un sistema básico para la gestión de reservas de cines. El programa permite manejar películas, salas, horarios, reservas y ventas. A continuación, explico cada componente y función del programa:
+
+1. Estructuras Definidas:
+    - Pelicula: Contiene la información básica de una película (nombre, año, duración, país y reseña).
+    - Sala: Define una sala de cine con su número, cantidad de butacas y precio.
+    - Horario: Representa el horario de una película con fecha, hora de inicio y finalización.
+    - Reserva: Estructura que vincula una película, sala y horario, además de gestionar las butacas reservadas.
+    - Venta: Se utiliza para almacenar los detalles de una venta, como consecutivo, cédula y tarjeta.
+
+2. Funciones Principales:
+    - agregarPelicula(): Permite añadir una nueva película al sistema.
+    - agregarSala(): Añade una nueva sala de cine con su capacidad y precio.
+    - agregarHorario(): Define un horario para una película específica.
+    - realizarReserva(): Aquí manejo las reservas de las butacas para las películas en las distintas salas.
+    - realizarVenta(): Al realizar una reserva, se puede registrar una venta donde valido la cédula y la tarjeta de crédito.
+    - mostrarPeliculas(): Muestra la lista de todas las películas disponibles en el sistema.
+    - mostrarSalas(): Muestra la información de todas las salas.
+    - mostrarHorarios(): Presenta todos los horarios disponibles.
+    - mostrarReservas(): Lista todas las reservas realizadas, junto con las butacas reservadas.
+    - mostrarVentas(): Muestra todas las ventas registradas en el sistema.
+    - mostrarButacas(): Esta función muestra el estado de las butacas para cada reserva.
+    - esCedulaValida() y esTarjetaValida(): Validan la estructura de la cédula y tarjeta respectivamente, asegurando que solo se ingresen números válidos.
+
+3. Estructura General:
+   El programa presenta un menú principal desde el cual se puede acceder a cada una de las funcionalidades descritas. Las opciones van desde agregar películas hasta mostrar reservas y realizar ventas. He implementado un ciclo que se repite hasta que el usuario elige salir del sistema.
+
+4. Consideraciones de Validación:
+    Para la cédula, verifico que tenga exactamente 9 dígitos, y para la tarjeta, que tenga 16. Esto garantiza que los datos ingresados sean consistentes antes de continuar con una venta.
+
